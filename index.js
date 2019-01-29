@@ -4,8 +4,16 @@ function scoreCalculator(arr) {
   }
   let score = 0;
   let bonus = true;
+  let check;
   arr.forEach(item => {
-    if (item > 10) {
+    if (typeof item !== 'number') {
+      check = 'All values must be numbers';
+      return;
+    }
+    if (item > 20) {
+      check = 'Value over 20 cannot be calculated';
+      return;
+    } else if (item > 10) {
       bonus = false;
     } else if (item >= 5) {
       bonus = false
@@ -16,6 +24,9 @@ function scoreCalculator(arr) {
   });
   if (bonus) {
     score += 100;
+  }
+  if (check) {
+    return check;
   }
   return score;
 }
