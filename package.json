@@ -1,0 +1,26 @@
+{
+  "name": "challenge-throwing-darts",
+  "version": "1.0.0",
+  "description": "You've just recently been hired to calculate scores for a Dart Board game",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --bail --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexithemia/Challenge-Throwing-Darts.git"
+  },
+  "author": "Tyler M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexithemia/Challenge-Throwing-Darts/issues"
+  },
+  "homepage": "https://github.com/Alexithemia/Challenge-Throwing-Darts#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
